@@ -1,17 +1,17 @@
 solution_to_sort=$1
 
+if [ ! -f $solution_to_sort ]
+  then
+      echo "File not found!"
+    exit 0
+fi
+
 if [[ -n "$solution_to_sort" ]]
     then
         echo "solution to sort: $solution_to_sort"
         echo "output file can be find in the script location under name SortedSolution.txt"
 else
     echo "argument error."
-    exit 0
-fi
-
-if [ ! -f $solution_to_sort ]
-  then
-      echo "File not found!"
     exit 0
 fi
 
